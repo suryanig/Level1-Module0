@@ -4,6 +4,9 @@ For a complete reference:
 https://docs.python.org/3/library/string.html
 """
 
+# No code needs to be written in this file. Use it as a reference for the
+# following projects.
+
 if __name__ == '__main__':
 
     # Declaring and initializing a string variable
@@ -70,3 +73,7 @@ if __name__ == '__main__':
     # Replacing characters from a string
     back_to_string = back_to_string.replace('_', '')
     print(back_to_string)
+
+    # Splitting a string into a list of strings separated by a space ' '
+    split_str_list = new_str.split(' ')
+    print(split_str_list)
