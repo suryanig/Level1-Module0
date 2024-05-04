@@ -13,25 +13,29 @@ def test_1_create_a_list():
 
 # TODO Complete the function so it returns a list of numbers from 0 to 20
 #  with both numbers 0 and 20 included in the list
-#NOT DONE
-def test_2_generate_a_list():
 
-    return list()
+def test_2_generate_a_list():
+    testlist2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    return testlist2
 
 
 # TODO Complete the function so it returns the product of all the numbers in
 #  the list multiplied together
-#NOT DONE
+
 def test_3_product(list_1):
-    list =
-    return None
+    product = 1
+    for item in list_1:
+        product *= item
+    return product
 
 
 # TODO Complete the function so it returns a list with all the elements from
 #  list_1 followed by items in list_2
-#NOT DONE
+
 def test_4_combine_lists(list_1, list_2):
-    return list()
+    for item in list_2:
+        list_1.append(item)
+    return list_1
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 

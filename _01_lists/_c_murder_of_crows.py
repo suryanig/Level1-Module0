@@ -5,6 +5,8 @@ import random
 
 
 def find_the_diamond(the_murder=None):
+    for item in list:
+
     pass
     # TODO 1) One of the Crows has eaten the diamond. You need to search
     #  through the stomach of each Crow, then print the name of the
