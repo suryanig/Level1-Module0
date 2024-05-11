@@ -5,7 +5,13 @@ import random
 
 
 def find_the_diamond(the_murder=None):
-    for item in list:
+    for crow in the_murder:
+        for item in crow.stomach_contents:
+            if item == "diamond":
+                print('The guilty crow is ' + str(crow.name))
+                print(str(len(crow.name)-1) + ' crows had to die before the diamond was found.')
+
+
 
     pass
     # TODO 1) One of the Crows has eaten the diamond. You need to search
