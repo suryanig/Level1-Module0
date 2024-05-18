@@ -12,16 +12,28 @@ import unittest
 
 # Given Strings s1 and s2, return the longer String
 def find_longer_string(s1, s2):
-
-    return None
-
+    len1 = len(s1)
+    len2 = len(s2)
+    if len1>len2:
+        return s1
+    if len2>len1:
+        return s2
+    else:
+        return s1
+# DONE
 
 # If String s contains the word "underscores", change all of the spaces to
 # underscores
 def format_spaces(s1):
+    s1.find('underscores')
+    if s1.find == True:
+        new_str_list = list(s1)
+        back_to_string = '_'.join(new_str_list)
+        return back_to_string
+    else:
+        return s1
 
-    return None
-
+# NOT DONE
 
 # Return the number of times String substring appears in String s
 def substring_count(s, substring):

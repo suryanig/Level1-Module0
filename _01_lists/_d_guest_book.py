@@ -31,8 +31,12 @@ def remove_guest(list_of_guests):
 #            Guest 3. Jin
 #         b. If there are no guests, print "There are no guests"
 def print_guests(list_of_guests):
-    for guest in list_of_guests:
-        print("Guest " + str(len(guest)))
+    guests = ""
+    for index, guest in enumerate(list_of_guests):
+        guests += "Guest " + str(index + 1) + ". " + guest + "\n"
+    messagebox.showinfo(None, message=guests)
+    if guests == "":
+        print("There are no guests")
     pass
 # WORK HERE
 # ======================= DO NOT EDIT THE CODE BELOW =========================
