@@ -32,9 +32,17 @@ def check_letter_in_word(word_to_guess, letter):
 #       return o__nge (a string)
 #  Remember that strings can't be changed directly!
 def replace_letter_in_word(word_to_guess, current_guess, letter):
-    index = word_to_guess.find(letter)
-    current_guess = current_guess[index:] + letter + current_guess[:index]
-    print(current_guess)
+    temp = 0
+    indices = []
+    temp = word_to_guess.find(letter, temp)
+    while temp < len(word_to_guess) and temp != -1:
+        indices.append(temp)
+        temp = word_to_guess.find(letter, temp+1)
+        #print(temp)
+    for index in indices:
+        current_guess = current_guess[:index] + letter + current_guess[index+1:]
+
+    #print(current_guess)
     return current_guess
 
 # ====================== DO NOT EDIT THE CODE BELOW ===========================
@@ -62,7 +70,7 @@ class Hangman(tk.Tk):
         self.get_new_random_word()
 
         # UNCOMMENT TO SHOW HIDDEN WORD
-        print(self.random_word)
+        #print(self.random_word)
 
         # Setup label to display keys pressed by the user
         self.label = tk.Label(self, bg='light grey', textvariable=self.entered_text)
